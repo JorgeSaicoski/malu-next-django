@@ -1,12 +1,8 @@
 from django.shortcuts import render
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
-from .models import Project
-from .models import Images
-from .models import Messages
-from .serializer import ProjectSerializer
-from .serializer import ImageSerializer
-from .serializer import MessageSerializer
+from .models import Project, Images, Messages
+from .serializer import ProjectSerializer, ImageSerializer, MessageSerializer
 
 
 # Create your views here.
