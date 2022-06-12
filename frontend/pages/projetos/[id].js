@@ -51,17 +51,18 @@ function Projeto() {
             <p className="w-full text-center text-base">{detail.description}</p>
           </div>
           <div className="sm:h-[40vh] flex flex-row ml-3 mr-3 overflow-x-scroll snap-x snap-mandatory">
-            <Image
-              src={detail.image} alt={detail.name} className="group-hover:scale-125 ease-in duration-200 h-auto w-1/3 rounded-lg" width={600}
-              height={450}
-              quality="90"
-              loading="eager"
-              layout="fixed"
+          <div className="w-screen sm:w-auto group rounded-lg overflow-hidden relative m-10 min-w-[500px] sm:w-[600px]">
+              <Image
+                src={detail.image} alt={detail.name} className="group-hover:scale-125 ease-in duration-200 h-full w-auto sm:min-w-[600px] rounded-lg"
+                width={600}
+                height={450}
+                loading="eager"
+                layout="fixed"
 
-            />
+              />
+            </div>
             {images.map(proj=>
                 <div className="w-screen sm:w-auto group rounded-lg overflow-hidden relative m-10 min-w-[500px] sm:w-[600px]" key={`${proj.name}`}>
-                  <img ></img>
                     <Image
                       src={proj.url} alt={proj.name} className="group-hover:scale-125 ease-in duration-200 h-full w-auto sm:min-w-[600px] rounded-lg"
                       width={600}

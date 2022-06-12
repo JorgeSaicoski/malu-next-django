@@ -21,6 +21,7 @@ export default function Home() {
       <ProjectList category="pai"/>
       <SectorTitle title="URBANISMO"/>
       <ProjectList category="urb"/>
+      <SectorTitle title="Contate!"/>
       <Contact/>
     </div>
   )
