@@ -10,14 +10,14 @@ class Project(models.Model):
     def __str__(self):
         return self.name
 
-class Images(models.Model):
+class Image(models.Model):
     name = models.CharField(max_length=30, default="")
     url = models.CharField(max_length=600, default="")
-    project = models.ForeignKey(Project, on_delete=models.CASCADE)
+    project = models.ForeignKey(Project, on_delete=models.CASCADE, related_name="created")
     def __str__(self):
         return self.url
 
-class Messages(models.Model):
+class Message(models.Model):
     name = models.CharField(max_length=30, default="")
     email = models.CharField(max_length=60, default="")
     body = models.TextField(blank = True)

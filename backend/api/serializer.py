@@ -1,7 +1,7 @@
 from rest_framework.serializers import ModelSerializer
 from .models import Project
-from .models import Images
-from .models import Messages
+from .models import Image
+from .models import Message
 
 class ProjectSerializer(ModelSerializer):
     class Meta:
@@ -10,10 +10,10 @@ class ProjectSerializer(ModelSerializer):
 
 class ImageSerializer(ModelSerializer):
     class Meta:
-        model = Images
+        model = Image
         fields = '__all__'
 
 class MessageSerializer(ModelSerializer):
     class Meta:
-        model = Messages
+        model = Message
         fields = '__all__'
