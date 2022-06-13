@@ -14,15 +14,15 @@ sudo apt install python3
 
 ## Run
 
-#For run you must to have two terminal opened. 
+For run you must to have two terminal opened. 
 
-#First terminal
+First terminal
 ```bash
 cd backend
 python manage.py runserver
 ```
 
-#Second
+Second terminal
 ```bash
 cd frontend
 npm run dev
