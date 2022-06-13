@@ -13,4 +13,17 @@ sudo apt install python3
 ```
 
 ## Run
-For run you must to have two terminal opened. In the first one you go to Django project and run the comand.
+
+For run you must to have two terminal opened. 
+
+First terminal
+```bash
+cd backend
+python manage.py runserver
+```
+
+Second terminal
+```bash
+cd frontend
+npm run dev
+```
